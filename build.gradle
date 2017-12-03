@@ -1,0 +1,43 @@
+buildscript {
+    repositories {
+        mavenCentral() // or jcenter()
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+    }
+}
+
+apply plugin: 'com.android.application'
+
+repositories{
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '26.0.2'
+
+
+    defaultConfig {
+        applicationId "com.customer.example"
+        minSdkVersion 15
+        targetSdkVersion 23
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+
+dependencies {
+    compile files('libs/gnsdk.jar')
+    compile files('libs/gnsdk_helpers.jar')
+}
+

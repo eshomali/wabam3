@@ -1,0 +1,234 @@
+[
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gracenote_logo_320.png.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\gracenote_logo_320.png"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_pindown.png.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\pindown.png"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\layout_settings.xml.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\layout\\settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_circle_widget.xml.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable-hdpi\\circle_widget.xml"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_border.xml.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\button_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cancel_2x.png.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\cancel_2x.png"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gracenote_header_tile.png.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\gracenote_header_tile.png"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gracenote_logo_tile_transparent.png.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\gracenote_logo_tile_transparent.png"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_headertile.xml.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\headertile.xml"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\layout_detail_view.xml.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\layout\\detail_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_libraryid.png.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\libraryid.png"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_border_red.xml.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\button_border_red.xml"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\layout_main.xml.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_box_off.png.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\box_off.png"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cancel_43_white.png.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\cancel_43_white.png"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_no_image_widget.xml.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable-hdpi\\no_image_widget.xml"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_box.xml.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\box.xml"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\layout_text_search.xml.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\layout\\text_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\xml_widgetproviderinfo.xml.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\xml\\widgetproviderinfo.xml"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gracenote_logo2.png.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\gracenote_logo2.png"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_solid_rectangle.xml.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\solid_rectangle.xml"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_idnow.png.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\idnow.png"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\layout_hostory_layout.xml.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\layout\\hostory_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_border.xml.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\border.xml"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_options_gear_43_white.png.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\options_gear_43_white.png"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_no_metadata.png.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\no_metadata.png"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gracenote_logo_tile.png.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\gracenote_logo_tile.png"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_close_window.png.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\icon_close_window.png"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\layout_visual_audio.xml.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\layout\\visual_audio.xml"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_loading.png.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\loading.png"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_clock.png.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\clock.png"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\layout_album_review.xml.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\layout\\album_review.xml"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_line.xml.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\line.xml"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_colored_ring.png.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\colored_ring.png"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\layout_tracklist.xml.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\layout\\tracklist.xml"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\layout_tracklist_row.xml.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\layout\\tracklist_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_spotify2.png.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\spotify2.png"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_headertile2.xml.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\headertile2.xml"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\layout_custom_dialog.xml.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\layout\\custom_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_no_cover_art.png.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\no_cover_art.png"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gracenote_header_tile_3.png.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\gracenote_header_tile_3.png"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\layout_histrory_row.xml.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\layout\\histrory_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\layout_widgetlayout.xml.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\layout\\widgetlayout.xml"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_idnow2.png.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\idnow2.png"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bottom_panel.xml.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\bottom_panel.xml"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_idmedia.png.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\idmedia.png"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_textsearch.png.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\textsearch.png"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_cancel_widget.png.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable-hdpi\\cancel_widget.png"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gracenote_logo.png.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\gracenote_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_spotify.png.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\spotify.png"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_no_image.xml.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\no_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_box_on.png.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\box_on.png"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gracenote_header_tile_4.png.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\gracenote_header_tile_4.png"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable_app_icon_152.png.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable\\app_icon_152.png"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_idnow_widget.png.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable-hdpi\\idnow_widget.png"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\layout_file_meta_data.xml.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\layout\\file_meta_data.xml"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_rectangle_widget.xml.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\drawable-hdpi\\rectangle_widget.xml"
+    },
+    {
+        "merged": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\res\\merged\\debug\\layout_bio_review.xml.flat",
+        "source": "C:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\src\\main\\res\\layout\\bio_review.xml"
+    }
+]
