@@ -310,22 +310,9 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 
 	
 	private void createUI() {
+
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.main);
-
-		AuthenticationRequest.Builder builder = new AuthenticationRequest.Builder(CLIENT_ID, AuthenticationResponse.Type.TOKEN, REDIRECT_URI);
-		builder.setScopes(new String[]{"user-read-private", "playlist-modify-private"});
-		final AuthenticationRequest request = builder.build();
-		AuthenticationClient.openLoginActivity(this, REQUEST_CODE, request);
-		file = new File(getFilesDir(), FILE_NAME);
-		s = s.getSettings(file);
-		pc = new PlaylistController(s, file);
-		pc.createPlaylist();
-
-
-
-
-
 
 
 
@@ -355,6 +342,10 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 			}
 		});
 
+		file = new File(getFilesDir(), FILE_NAME);
+		s = s.getSettings(file);
+		pc = new PlaylistController(s, file);
+		pc.createPlaylist();
 //--------------------------------------------------------------------------------------------------
 		buttonSpotify = (Button) findViewById(R.id.buttonSpotify);
 		buttonSpotify.setEnabled( false );	//true
@@ -433,6 +424,12 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 		audioVisualizeDisplay = new AudioVisualizeDisplay(this,linearLayoutVisContainer,0);
 		
 		linearLayoutHomeContainer = (LinearLayout)findViewById(R.id.home_container);
+
+		AuthenticationRequest.Builder builder = new AuthenticationRequest.Builder(CLIENT_ID, AuthenticationResponse.Type.TOKEN, REDIRECT_URI);
+		builder.setScopes(new String[]{"user-read-private", "playlist-modify-private"});
+		final AuthenticationRequest request = builder.build();
+		AuthenticationClient.openLoginActivity(this, REQUEST_CODE, request);
+
 	}
 	
 	/**
@@ -1018,7 +1015,6 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 
 			buttonIDNow.setEnabled( enabled && audioProcessingStarted);
 			buttonSpotify.setEnabled(enabled);
-		//	buttonSpotify.setVisibility(View.INVISIBLE);
 			buttonHistory.setEnabled( enabled );			
 		//	buttonLibraryID.setEnabled( enabled );
 			buttonCancel.setEnabled( (uiState == UIState.INPROGRESS) );			 	
@@ -1135,12 +1131,6 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 		public void run() {
 			try {
 
-				if (albumsResult.resultCount() == 0) {
-					
-				//	setStatus("No match", true);
-
-				} else {
-
 					spotifyTrack = albumsResult.albums().getIterator().next().trackMatched().title().display();
 					spotifyArtist = albumsResult.albums().getIterator().next().artist().name().display();
 					spotifyAlbum = albumsResult.albums().getIterator().next().title().display();
@@ -1157,7 +1147,6 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 					trackChanges(albumsResult);
 					// add button here for option to parse metadata to Spotify
 
-				}
 			} catch (GnException e) {
 				setStatus(e.errorDescription(), true);
 				return;
