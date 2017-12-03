@@ -1,11 +1,11 @@
 #Internal package file, do not edit.
-#Sat Dec 02 17:45:06 EST 2017
-1.base=C\:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\assets\\debug
+#Sat Dec 02 22:27:37 EST 2017
+1.base=C\:\\Users\\Matthew Fair\\AndroidStudioProjects\\wabam30\\build\\intermediates\\assets\\debug
 0.baseType=DIRECTORY
 1.baseType=DIRECTORY
 count=2
 1.set=ASSET
 0.path=license.txt
 0.set=ASSET
-0.base=C\:\\Users\\essa.shomali\\Desktop\\CSI3370\\gn-mobile-android-1.3.1.5172\\app\\build\\intermediates\\assets\\debug
+0.base=C\:\\Users\\Matthew Fair\\AndroidStudioProjects\\wabam30\\build\\intermediates\\assets\\debug
 1.path=1557.b

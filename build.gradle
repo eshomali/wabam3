@@ -12,12 +12,24 @@ buildscript {
 
 apply plugin: 'com.android.application'
 
-repositories{
+repositories {
     mavenCentral()
+    maven { url "https://jitpack.io" }
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://maven.google.com' }
+    }
 }
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 26
     buildToolsVersion '26.0.2'
 
 
@@ -37,7 +49,14 @@ android {
 
 
 dependencies {
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     compile files('libs/gnsdk.jar')
     compile files('libs/gnsdk_helpers.jar')
+
+    compile 'com.github.kaaes:spotify-web-api-android:0.4.1'
+    compile 'com.spotify.android:auth:1.0.0-alpha'
+    compile 'com.spotify.sdk:spotify-player-24-noconnect-2.20b@aar'
 }
+
 

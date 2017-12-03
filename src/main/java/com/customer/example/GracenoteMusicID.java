@@ -47,7 +47,27 @@ import android.widget.LinearLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
+import com.customer.example.controllers.PlaylistController;
+import com.customer.example.controllers.SearchTrackController;
+import com.customer.example.util.Settings;
 import com.gracenote.gnsdk.*;
+import com.spotify.sdk.android.authentication.AuthenticationClient;
+import com.spotify.sdk.android.authentication.AuthenticationRequest;
+import com.spotify.sdk.android.authentication.AuthenticationResponse;
+import com.spotify.sdk.android.player.Config;
+import com.spotify.sdk.android.player.ConnectionStateCallback;
+import com.spotify.sdk.android.player.Error;
+import com.spotify.sdk.android.player.Player;
+import com.spotify.sdk.android.player.PlayerEvent;
+import com.spotify.sdk.android.player.Spotify;
+import com.spotify.sdk.android.player.SpotifyPlayer;
+
+import kaaes.spotify.webapi.android.SpotifyApi;
+import kaaes.spotify.webapi.android.SpotifyService;
+import kaaes.spotify.webapi.android.models.UserPrivate;
+import retrofit.Callback;
+import retrofit.RetrofitError;
+import retrofit.client.Response;
 
 
 /**
@@ -68,7 +88,8 @@ import com.gracenote.gnsdk.*;
  * Art. Additional detail can be viewed by pressing on a result.
  * </p>
  */
-public class GracenoteMusicID extends Activity {
+public class GracenoteMusicID extends Activity implements SpotifyPlayer.NotificationCallback, ConnectionStateCallback
+{
 
 	// set these values before running the sample
     static final String 				gnsdkClientId 			= "599165599";
@@ -122,7 +143,25 @@ public class GracenoteMusicID extends Activity {
 	private String 						spotifyArtist;
 	private String 						spotifyTrack;
 	private String 						spotifyAlbum;
-	
+
+	private String spotifyClientToken;
+	private Player mPlayer;
+	private SpotifyApi api = new SpotifyApi();
+	private SpotifyService apiService = api.getService();
+	SearchTrackController stc;
+
+	private Settings s = new Settings();
+	private File file;
+	PlaylistController pc;
+	private static final String CLIENT_ID = "6ebb0c251b6742dbbac3df964d636ea2";
+	private static final String REDIRECT_URI = "myapp-spotifylogin://callback";
+	private static final int REQUEST_CODE = 1337;
+	private static final String FILE_NAME = "Settings.dat";
+	private static final String PLAYLIST_NAME = "Wabam";
+
+
+
+
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -274,6 +313,22 @@ public class GracenoteMusicID extends Activity {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.main);
 
+		AuthenticationRequest.Builder builder = new AuthenticationRequest.Builder(CLIENT_ID, AuthenticationResponse.Type.TOKEN, REDIRECT_URI);
+		builder.setScopes(new String[]{"user-read-private", "playlist-modify-private"});
+		final AuthenticationRequest request = builder.build();
+		AuthenticationClient.openLoginActivity(this, REQUEST_CODE, request);
+		file = new File(getFilesDir(), FILE_NAME);
+		s = s.getSettings(file);
+		pc = new PlaylistController(s, file);
+		pc.createPlaylist();
+
+
+
+
+
+
+
+
 		buttonIDNow = (Button) findViewById(R.id.buttonIDNow);
 		buttonIDNow.setEnabled( false );	//true
 		buttonIDNow.setOnClickListener(new View.OnClickListener() {
@@ -306,10 +361,12 @@ public class GracenoteMusicID extends Activity {
 		buttonSpotify.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				try {
-
+					s = s.getSettings(file);
 					System.out.println("ALBUM_NEW=" + spotifyAlbum);		// TEXT OBJECTS TO BE PARSED TO SPOTIFY API
 					System.out.println("ARTIST_NEW=" + spotifyArtist);
 					System.out.println("TRACK_NEW=" + spotifyTrack);
+					System.out.println(s.getUriResult());
+					pc.addToPlaylist(s.getUriResult());
 
 				}	//changes
 				catch (Exception e) {
@@ -1087,7 +1144,8 @@ public class GracenoteMusicID extends Activity {
 					spotifyTrack = albumsResult.albums().getIterator().next().trackMatched().title().display();
 					spotifyArtist = albumsResult.albums().getIterator().next().artist().name().display();
 					spotifyAlbum = albumsResult.albums().getIterator().next().title().display();
-
+					stc = new SearchTrackController(s, file);
+					stc.SearchTrack(spotifyTrack, spotifyArtist);
 					setStatus("Match found", true);
 					GnAlbumIterator iter = albumsResult.albums().getIterator();
 					while (iter.hasNext()) {
@@ -1484,6 +1542,112 @@ public class GracenoteMusicID extends Activity {
 			}
 		}
 	}
-	
+
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
+		super.onActivityResult(requestCode, resultCode, intent);
+
+		// Check if result comes from the correct activity
+		if (requestCode == REQUEST_CODE) {
+			AuthenticationResponse response = AuthenticationClient.getResponse(resultCode, intent);
+			if (response.getType() == AuthenticationResponse.Type.TOKEN) {
+
+
+				spotifyClientToken = response.getAccessToken();
+				s.setAccessToken(spotifyClientToken);
+				s.saveSettings(s, file);
+
+
+				api.setAccessToken(spotifyClientToken);
+				Config playerConfig = new Config(this, response.getAccessToken(), CLIENT_ID);
+				Spotify.getPlayer(playerConfig, this, new SpotifyPlayer.InitializationObserver() {
+					@Override
+					public void onInitialized(SpotifyPlayer spotifyPlayer) {
+						mPlayer = spotifyPlayer;
+						mPlayer.addConnectionStateCallback(GracenoteMusicID.this);
+						mPlayer.addNotificationCallback(GracenoteMusicID.this);
+					}
+
+					@Override
+					public void onError(Throwable throwable) {
+						Log.e("MainActivity", "Could not initialize player: " + throwable.getMessage());
+					}
+				});
+			}
+
+			apiService.getMe(new Callback<UserPrivate>(){
+				@Override
+				public void success(UserPrivate userPrivate, Response response){
+					s.setUserID(userPrivate.id);
+					s.saveSettings(s, file);
+				}
+				@Override
+				public void failure(RetrofitError error){
+
+				}
+			});
+
+			s.saveSettings(s, file);
+		}
+	}
+
+	@Override
+	protected void onDestroy() {
+		// VERY IMPORTANT! This must always be called or else you will leak resources
+		Spotify.destroyPlayer(this);
+		super.onDestroy();
+	}
+
+	@Override
+	public void onPlaybackEvent(PlayerEvent playerEvent) {
+		Log.d("MainActivity", "Playback event received: " + playerEvent.name());
+		switch (playerEvent) {
+			// Handle event type as necessary
+			default:                break;
+		}
+	}
+
+	@Override
+	public void onPlaybackError(Error error) {
+		Log.d("MainActivity", "Playback error received: " + error.name());
+		switch (error) {
+			// Handle error type as necessary
+			default:
+				break;
+		}
+	}
+
+	@Override
+	public void onLoggedIn() {
+		Log.d("MainActivity", "User logged in");
+		s.setLoggedIn(true);
+		//mPlayer.playUri(null, resultUri, 0, 0);
+
+	}
+
+	@Override
+	public void onLoggedOut() {
+		Log.d("MainActivity", "User logged out");
+	}
+
+	@Override
+	public void onLoginFailed(Error error) {
+
+	}
+
+
+	public void onLoginFailed(int i) {
+		Log.d("MainActivity", "Login failed");
+	}
+
+	@Override
+	public void onTemporaryError() {
+		Log.d("MainActivity", "Temporary error occurred");
+	}
+
+	@Override
+	public void onConnectionMessage(String message) {
+		Log.d("MainActivity", "Received connection message: " + message);
+	}
 	
 }
