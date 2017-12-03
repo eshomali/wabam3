@@ -105,7 +105,7 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 	// ui objects
 	private TextView 					statusText;
 	private Button						buttonSettings;
-	private SettingsMenu				settingsMenu;
+	//private SettingsMenu				settingsMenu;
 	private Button 						buttonIDNow;
 	private Button						buttonSpotify;
 	private Button 						buttonPlay;
@@ -168,18 +168,18 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
+
 		createUI();
 
 		activity = this;
 		context  = this.getApplicationContext();
-				
+
 		// check the client id and tag have been set
 		if ( (gnsdkClientId == null) || (gnsdkClientTag == null) ){
 			showError( "Please set Client ID and Client Tag" );
 			return;
 		}
-		
+
 		// get the gnsdk license from the application assets
 		String gnsdkLicense = null;
 		if ( (gnsdkLicenseFilename == null) || (gnsdkLicenseFilename.length() == 0) ){
@@ -191,12 +191,12 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 				return;
 			}
 		}
-		
+
 		try {
-			
+
 			// GnManager must be created first, it initializes GNSDK
 			gnManager = new GnManager( context, gnsdkLicense, GnLicenseInputMode.kLicenseInputModeString );
-			
+
 			// provide handler to receive system events, such as locale update needed
 			gnManager.systemEventHandler( new SystemEvents() );
 
@@ -206,27 +206,27 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 
 			// enable storage provider allowing GNSDK to use its persistent stores
 			GnStorageSqlite.enable();
-			
+
 			// enable local MusicID-Stream recognition (GNSDK storage provider must be enabled as pre-requisite)
 			GnLookupLocalStream.enable();
-			
+
 			// Loads data to support the requested locale, data is downloaded from Gracenote Service if not
 			// found in persistent storage. Once downloaded it is stored in persistent storage (if storage
-			// provider is enabled). Download and write to persistent storage can be lengthy so perform in 
+			// provider is enabled). Download and write to persistent storage can be lengthy so perform in
 			// another thread
-			Thread localeThread = new Thread( 
+			Thread localeThread = new Thread(
 									new LocaleLoadRunnable(GnLocaleGroup.kLocaleGroupMusic,
-										GnLanguage.kLanguageEnglish, 
+										GnLanguage.kLanguageEnglish,
 										GnRegion.kRegionGlobal,
 										GnDescriptor.kDescriptorDefault,
-										gnUser) 
+										gnUser)
 									);
-			localeThread.start();	
-			
+			localeThread.start();
+
 			// Ingest MusicID-Stream local bundle, perform in another thread as it can be lengthy
 			Thread ingestThread = new Thread( new LocalBundleIngestRunnable(context) );
-			ingestThread.start();									
-			
+			ingestThread.start();
+
 			// Set up for continuous listening from the microphone
 			// - create microphone, this can live for lifetime of app
 			// - create GnMusicIdStream instance, this can live for lifetime of app
@@ -239,7 +239,7 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 			gnMusicIdStream.options().lookupData(GnLookupData.kLookupDataContent, true);
 			gnMusicIdStream.options().lookupData(GnLookupData.kLookupDataSonicData, true);
 			gnMusicIdStream.options().resultSingle( true );
-			
+
 			// Retain GnMusicIdStream object so we can cancel an active identification if requested
 			streamIdObjects.add( gnMusicIdStream );
 
@@ -248,7 +248,7 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 			Log.e(appString, e.errorCode() + ", " + e.errorDescription() + ", " + e.errorModule());
 			showError(e.errorAPI() + ": " + e.errorDescription() );
 			return;
-			
+
 		} catch ( Exception e ) {
 			if(e.getMessage() != null){
 				Log.e(appString, e.getMessage() );
@@ -265,6 +265,8 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 		setStatus( "" , true);
 		((TextView) findViewById(R.id.sdkVersionText)).setText("Wabam Music App");
 		setUIState( UIState.READY );
+
+		//spotifyLogin();
 	}
 
     @Override
@@ -281,7 +283,7 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 			
 		}
     }
-    
+
 
 	@Override
 	protected void onPause() {
@@ -310,21 +312,17 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 		}
 	}
 
-	
+
 	private void createUI() {
 
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.main);
 
 
-
 		buttonIDNow = (Button) findViewById(R.id.buttonIDNow);
 		buttonIDNow.setEnabled( false );	//true
 		buttonIDNow.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
-					if(spotifyLoggedIn != true){
-						spotifyLogin();
-					}
 				setUIState(UIState.INPROGRESS);
 				clearResults();
 				audioVisualizeDisplay.setDisplay(visShowing, true);    //displays visShowing "animation"
@@ -345,33 +343,33 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 		pc = new PlaylistController(s, file);
 		pc.createPlaylist();
 //--------------------------------------------------------------------------------------------------
+
 		buttonSpotify = (Button) findViewById(R.id.buttonSpotify);
-		buttonSpotify.setEnabled( false );	//true
+		buttonSpotify.setEnabled(false);
 		buttonSpotify.setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {
-				try {
-					s = s.getSettings(file);
-					System.out.println("ALBUM_NEW=" + spotifyAlbum);        // TEXT OBJECTS TO BE PARSED TO SPOTIFY API
-					System.out.println("ARTIST_NEW=" + spotifyArtist);
-					System.out.println("TRACK_NEW=" + spotifyTrack);
-					System.out.println(s.getUriResult());
-					pc.addToPlaylist(s.getUriResult());
-					Toast.makeText(activity, s.getTrackName() + " has been added to the playlist!", Toast.LENGTH_SHORT).show();
-				}	//changes
-				catch (Exception e) {
+				public void onClick(View v) {
+						try {
+							s = s.getSettings(file);
+							System.out.println("ALBUM_NEW=" + spotifyAlbum);        // TEXT OBJECTS TO BE PARSED TO SPOTIFY API
+							System.out.println("ARTIST_NEW=" + spotifyArtist);
+							System.out.println("TRACK_NEW=" + spotifyTrack);
+							System.out.println(s.getUriResult());
+							pc.addToPlaylist(s.getUriResult());
+							Toast.makeText(activity, s.getTrackName() + " has been added to the playlist!", Toast.LENGTH_SHORT).show();
+						}    //changes
+						catch (Exception e) {
 							e.printStackTrace();
-											   }
-										   }
-		});
+						}
+					}
+			});
 //--------------------------------------------------------------------------------------------------
 
 		
 		buttonPause = (Button) findViewById(R.id.buttonPause);
+		buttonPause.setEnabled(false);
 		buttonPause.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v){
-				if(spotifyLoggedIn != true){
-					spotifyLogin();
-				} else if(mPlayer.getPlaybackState().isPlaying) {
+				if(mPlayer.getPlaybackState().isPlaying) {
 					mPlayer.pause(mOperationCallback);
 					Toast.makeText(activity, "Playback paused.", Toast.LENGTH_SHORT).show();
 				} else if(!mPlayer.getPlaybackState().isPlaying) {
@@ -382,14 +380,12 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 		});
 
 		buttonPlay = (Button) findViewById(R.id.buttonPlay);
+		buttonPlay.setEnabled(spotifyLoggedIn);
 		buttonPlay.setOnClickListener(new View.OnClickListener(){
 			public void onClick(View v) {
-				if (spotifyLoggedIn != true) {
-					spotifyLogin();
-				} else{
-					mPlayer.playUri(null, s.getUriResult(), 0, 0);
-					Toast.makeText(activity, "Now Playing: " + s.getTrackName(), Toast.LENGTH_SHORT).show();
-				}
+				mPlayer.playUri(null, s.getUriResult(), 0, 0);
+				Toast.makeText(activity, "Now Playing: " + s.getTrackName(), Toast.LENGTH_SHORT).show();
+
 			}
 		});
 		buttonLogin = (Button) findViewById(R.id.buttonCancel);
@@ -427,6 +423,12 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 		final AuthenticationRequest request = builder.build();
 		AuthenticationClient.openLoginActivity(this, REQUEST_CODE, request);
 
+	}
+
+	private void enableSpotifyButtons(){
+		buttonPlay.setEnabled(spotifyLoggedIn);
+		buttonPause.setEnabled(spotifyLoggedIn);
+		buttonSpotify.setEnabled(spotifyLoggedIn);
 	}
 
 	/**
@@ -1011,10 +1013,6 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 			boolean enabled = (uiState == UIState.READY);
 
 			buttonIDNow.setEnabled( enabled && audioProcessingStarted);
-			buttonSpotify.setEnabled(enabled);
-			buttonPause.setEnabled( enabled );
-		//	buttonLibraryID.setEnabled( enabled );
-			// buttonCancel.setEnabled( (uiState == UIState.INPROGRESS) );
 			buttonSettings.setEnabled(enabled);
 		}
 		
@@ -1140,7 +1138,7 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 					
 					}
 
-					buttonSpotify.setEnabled( true );
+
 					trackChanges(albumsResult);
 					// add button here for option to parse metadata to Spotify
 
@@ -1275,40 +1273,7 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 		}
 	}
 		
-	class SettingsMenu {
-		
-		private CheckBox debugCheckBox;
-		private CheckBox localSearchCheckBox;
-		AlertDialog dialog; 
-		
-		SettingsMenu(){
-			
-			AlertDialog.Builder builder = new AlertDialog.Builder( GracenoteMusicID.this );
-			builder.setTitle("Settings");
-			LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-			View settingsView = inflater.inflate( R.layout.settings, null );
-			builder.setView(settingsView);
-			builder.setPositiveButton("OK",
-				new DialogInterface.OnClickListener() {
-					public void onClick( DialogInterface dialog, int whichButton ) {
-						applySettingsUpdate();
-					}
-				});
 
-			builder.setNegativeButton("Cancel", null);
-			dialog = builder.create();
-			
-			debugCheckBox = (CheckBox) settingsView.findViewById(R.id.debugLogCheckBox);
-			localSearchCheckBox = (CheckBox) settingsView.findViewById(R.id.localSearchCheckBox);
-									
-		}
-		
-		private void applySettingsUpdate(){
-			enableDebugLog(debugCheckBox.isChecked());
-			enableLocalSearchOnly(localSearchCheckBox.isChecked());
-		}
-	}
-	
 	
 	class AudioVisualizeDisplay {
 		
@@ -1613,6 +1578,7 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 		Log.d("MainActivity", "User logged in");
 		spotifyLoggedIn = true;
 		Toast.makeText(activity, "Login Successful!", Toast.LENGTH_SHORT).show();
+		enableSpotifyButtons();
 	}
 
 	@Override
@@ -1639,5 +1605,5 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 	public void onConnectionMessage(String message) {
 		Log.d("MainActivity", "Received connection message: " + message);
 	}
-	
+
 }
