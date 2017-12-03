@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat Dec 02 22:37:05 EST 2017
+#Sun Dec 03 01:31:47 EST 2017
 56.path=lib/x86/libgnsdk_playlist.3.12.1.so
 5.base=C\:\\Users\\Matthew Fair\\AndroidStudioProjects\\wabam30\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0
 42.base=C\:\\Users\\Matthew Fair\\AndroidStudioProjects\\wabam30\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0

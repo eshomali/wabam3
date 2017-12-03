@@ -58,16 +58,19 @@
                 android:orientation="horizontal" >
 
                 <Button
-                    android:id="@+id/buttoncancel"
+                    android:id="@+id/buttonCancel"
                     android:layout_width="fill_parent"
                     android:layout_height="72dip"
                     android:layout_gravity="bottom"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="13dp"
                     android:layout_weight="1"
                     android:background="@null"
                     android:drawableLeft="@drawable/cancel_43_white"
                     android:gravity="center_vertical|left"
-                    android:paddingTop="20dp" />
+                    android:paddingTop="20dp"
+                    android:text="  Login"
+                    android:textColor="@color/off_white"
+                    android:textSize="9sp"/>
 
             </LinearLayout>
 
@@ -106,9 +109,12 @@
                     android:layout_marginRight="15dp"
                     android:layout_weight="1"
                     android:background="@null"
-                    android:drawableRight="@drawable/options_gear_43_white"
+                    android:drawableRight="@drawable/clock_white"
                     android:gravity="center_vertical|right"
-                    android:paddingTop="13dp" />
+                    android:paddingTop="13dp"
+                    android:text="History   "
+                    android:textColor="@color/off_white"
+                    android:textSize="9sp"/>
 
             </LinearLayout>
 
@@ -135,7 +141,7 @@
         android:paddingTop="5dip" >
 
         <TextView
-            android:id="@+id/statusText"
+            android:id="@+id/statusText1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="10dip"
@@ -187,9 +193,9 @@
                 android:background="@null"
                 android:layout_marginTop="10dp"
                 android:drawablePadding="2dp"
-                android:drawableTop="@drawable/libraryid"
+                android:drawableTop="@drawable/spotify_logo"
                 android:gravity="bottom|center_horizontal"
-                android:text="Library ID"
+                android:text="Add to spotify"
                 android:textColor="@color/very_dark_gray"
                 android:textSize="9sp" />
 
@@ -227,30 +233,30 @@
             android:orientation="horizontal" >
 
             <Button
-                android:id="@+id/buttonText"
+                android:id="@+id/buttonPlay"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@null"
                 android:layout_marginTop="10dp"
                 android:drawablePadding="2dp"
-                android:drawableTop="@drawable/textsearch"
+                android:drawableTop="@drawable/play_song"
                 android:gravity="bottom|center_horizontal"
-                android:text="Text Search"
+                android:text="Play Song"
                 android:textColor="@color/very_dark_gray"
                 android:textSize="9sp" />
 
             <Button
-                android:id="@+id/buttonHistory"
+                android:id="@+id/buttonPause"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@null"
                 android:layout_marginTop="10dp"
                 android:drawablePadding="2dp"
-                android:drawableTop="@drawable/clock"
+                android:drawableTop="@drawable/pause_song"
                 android:gravity="bottom|center_horizontal"
-                android:text="History"
+                android:text="Pause Song"
                 android:textColor="@color/very_dark_gray"
                 android:textSize="9sp" />
         </LinearLayout>

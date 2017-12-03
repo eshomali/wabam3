@@ -5,53 +5,74 @@
     build-mode="COLD"
     density="560dpi"
     format="10"
-    ir-eligibility="COMPATIBLE"
+    ir-eligibility="R_CLASS_CHANGE"
     plugin-version="3.0.1"
-    timestamp="1512274928806"
+    timestamp="1512282700297"
     token="-4853746259282242034"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="1961" />
+        duration="1596" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="113" />
+        duration="58" />
     <task
         name="verifier"
-        duration="148" />
+        duration="112" />
 
+    <artifact
+        location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        type="SPLIT" />
     <artifact
         location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\intermediates\split-apk\debug\slices\slice_3.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\intermediates\split-apk\debug\slices\slice_7.apk"
         type="SPLIT" />
+    <artifact
+        location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\intermediates\split-apk\debug\slices\slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\outputs\apk\debug\wabam30-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1512274650921"
+        timestamp="1512278855075"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\intermediates\split-apk\debug\slices\slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
+            location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\outputs\apk\debug\wabam30-debug.apk"
+            type="SPLIT_MAIN" />
+        <artifact
             location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\intermediates\split-apk\debug\slices\slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\intermediates\split-apk\debug\slices\slice_6.apk"
@@ -60,29 +81,38 @@
             location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="R_CLASS_CHANGE"
+        timestamp="1512282700297"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
+            location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+        <artifact
             location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\outputs\apk\debug\wabam30-debug.apk"
             type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1512274928806"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\intermediates\split-apk\debug\slices\slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\build\intermediates\split-apk\debug\slices\slice_4.apk"
-            type="SPLIT" />
     </build>
 
 </instant-run>
