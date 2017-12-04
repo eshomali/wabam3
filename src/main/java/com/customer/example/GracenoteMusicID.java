@@ -17,7 +17,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
-
+import java.util.Arrays;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -140,10 +140,11 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 	private volatile boolean			analyzingCollection 	 = false;
 	private volatile boolean			analyzeCancelled 	 	 = false;
 
-	// Spotify crap
+	// Spotify API
 	private String 						spotifyArtist;
 	private String 						spotifyTrack;
 	private String 						spotifyAlbum;
+	private String						artistToken;
 
 	private String spotifyClientToken;
 	private Player mPlayer;
@@ -1126,9 +1127,15 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 		public void run() {
 			try {
 
-					spotifyTrack = albumsResult.albums().getIterator().next().trackMatched().title().display();
-					spotifyArtist = albumsResult.albums().getIterator().next().artist().name().display();
-					spotifyAlbum = albumsResult.albums().getIterator().next().title().display();
+					spotifyTrack = albumsResult.albums().getIterator().next().trackMatched().title().display();	//Ex: Silence
+					artistToken = albumsResult.albums().getIterator().next().artist().name().display();			//Ex: Marshmello Feat. Khalid
+					spotifyAlbum = albumsResult.albums().getIterator().next().title().display();				//Ex: Silence
+
+					//Delimiting artistToken into array artist[]
+					String[] artist = artistToken.split(" Feat. ");		//delimit aka remove all instances of " Feat. "
+					System.out.println(Arrays.toString(artist));				//EX: artist[0] = Marshmello, artist[1] = Khalid
+					spotifyArtist = artist[0];									//set only first token; Ex: Marshmello
+
 					stc = new SearchTrackController(s, file);
 					stc.SearchTrack(spotifyTrack, spotifyArtist);
 					setStatus("Match found", true);
