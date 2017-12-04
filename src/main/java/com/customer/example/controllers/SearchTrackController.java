@@ -36,13 +36,27 @@ public class SearchTrackController {
             @Override
             public void success(TracksPager tracksPager, Response response){
                 String artist;
+
                 for(int i = 0; i < tracksPager.tracks.items.size(); i++ ) {
-                    artist = tracksPager.tracks.items.get(i).artists.get(0).name.toLowerCase();
-                    if(artist.equals(newArtistName.toLowerCase())) {
+                    System.out.println("SEARCH: " + i + " " + tracksPager.tracks.items.get(i).name);
+
+                    artist = tracksPager.tracks.items.get(i).artists.get(0).name.toLowerCase().trim();
+                    System.out.println("SEARCH: " + i + " " + artist);
+                    System.out.println("SEARCH - INPUT ARTIST: " + newArtistName.toLowerCase());
+                    if(artist.contains(newArtistName.toLowerCase())) {
                         savedSettings.setTrackName(tracksPager.tracks.items.get(i).name);
                         savedSettings.setTrackArtist(tracksPager.tracks.items.get(i).artists.get(0).name);
                         savedSettings.setUriResult(tracksPager.tracks.items.get(i).uri);
                         System.out.println("SEARCH: "+tracksPager.tracks.items.get(i).uri);
+                        savedSettings.saveSettings(savedSettings, file);
+                        break;
+                    } else {
+                        System.out.println("NO MATCH FOUND");
+                    }
+                    if(newArtistName.toLowerCase().equals("various artists")){
+                        savedSettings.setTrackName(tracksPager.tracks.items.get(0).name);
+                        savedSettings.setTrackArtist(tracksPager.tracks.items.get(0).artists.get(0).name);
+                        savedSettings.setUriResult(tracksPager.tracks.items.get(0).uri);
                         savedSettings.saveSettings(savedSettings, file);
                         break;
                     }

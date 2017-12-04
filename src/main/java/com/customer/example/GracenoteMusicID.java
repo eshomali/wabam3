@@ -341,6 +341,7 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 
 		file = new File(getFilesDir(), FILE_NAME);
 		s = s.getSettings(file);
+		s.setUriResult(null);
 		pc = new PlaylistController(s, file);
 		pc.createPlaylist();
 //--------------------------------------------------------------------------------------------------
@@ -361,6 +362,7 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 						catch (Exception e) {
 							e.printStackTrace();
 						}
+
 					}
 			});
 //--------------------------------------------------------------------------------------------------
@@ -370,12 +372,16 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 		buttonPause.setEnabled(false);
 		buttonPause.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v){
-				if(mPlayer.getPlaybackState().isPlaying) {
-					mPlayer.pause(mOperationCallback);
-					Toast.makeText(activity, "Playback paused.", Toast.LENGTH_SHORT).show();
-				} else if(!mPlayer.getPlaybackState().isPlaying) {
-					mPlayer.resume(mOperationCallback);
-					Toast.makeText(activity, "Playback resumed.", Toast.LENGTH_SHORT).show();
+				try {
+					if (mPlayer.getPlaybackState().isPlaying) {
+						mPlayer.pause(mOperationCallback);
+						Toast.makeText(activity, "Playback paused.", Toast.LENGTH_SHORT).show();
+					} else if (!mPlayer.getPlaybackState().isPlaying) {
+						mPlayer.resume(mOperationCallback);
+						Toast.makeText(activity, "Playback resumed.", Toast.LENGTH_SHORT).show();
+					}
+				} catch (Exception e){
+					e.printStackTrace();
 				}
 			}
 		});
@@ -384,9 +390,12 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 		buttonPlay.setEnabled(spotifyLoggedIn);
 		buttonPlay.setOnClickListener(new View.OnClickListener(){
 			public void onClick(View v) {
-				mPlayer.playUri(null, s.getUriResult(), 0, 0);
-				Toast.makeText(activity, "Now Playing: " + s.getTrackName(), Toast.LENGTH_SHORT).show();
-
+				try {
+					mPlayer.playUri(null, s.getUriResult(), 0, 0);
+					Toast.makeText(activity, "Now Playing: " + s.getTrackName(), Toast.LENGTH_SHORT).show();
+				} catch (Exception e){
+					e.printStackTrace();
+				}
 			}
 		});
 		buttonLogin = (Button) findViewById(R.id.buttonCancel);
@@ -1127,18 +1136,43 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 		public void run() {
 			try {
 
-					spotifyTrack = albumsResult.albums().getIterator().next().trackMatched().title().display();	//Ex: Silence
+					String trackToken = albumsResult.albums().getIterator().next().trackMatched().title().display();	//Ex: Silence
 					artistToken = albumsResult.albums().getIterator().next().artist().name().display();			//Ex: Marshmello Feat. Khalid
 					spotifyAlbum = albumsResult.albums().getIterator().next().title().display();				//Ex: Silence
-
+					System.out.println("1142 RUN: " + trackToken);
+					System.out.println("1143 RUN: " + artistToken);
 					//Delimiting artistToken into array artist[]
 					if (artistToken.contains("Feat.")) {                            //if artistToken containt "Feat."
                         String[] artist = artistToken.split(" Feat. ");		//delimit aka remove all instances of " Feat. "
-                        System.out.println(Arrays.toString(artist));				//EX: artist[0] = Marshmello, artist[1] = Khalid
-                        spotifyArtist = artist[0];                                  //set only first token; Ex: Marshmello
-                    }
-                    else spotifyArtist = artistToken;                                //if not contains "Feat.", keep string value
+                        spotifyArtist = artist[0].trim();                                  //EX: artist[0] = Marshmello, artist[1] = Khalid
+                    } else if(artistToken.contains("&")) {
+						String[] artist = artistToken.split("&");
+						spotifyArtist = artist[0].trim();
+					} else {
+						spotifyArtist = artistToken;
+						System.out.println("1155 RUN NO: " + artistToken);//if not contains "Feat.", keep string value
+					}
 
+
+					//Delimit Track search to refine results
+					if(trackToken.contains("(")) {
+						String[] track = trackToken.split("\\p{Punct}");
+						spotifyTrack = track[0].trim();
+					} else if (trackToken.contains("Featuring")) {                            //if artistToken containt "Feat."
+						String[] track = trackToken.split(" Featuring ");        		//delimit aka remove all instances of " Feat. "
+						spotifyTrack = track[0].trim();
+					} else if (trackToken.contains("'")) {                            //Remove ' from the song. Not passed to spotify correctly
+						String[] track = trackToken.split("\\p{Punct}");
+						if (track.length > 1)
+							spotifyTrack = track[0].trim()+track[1];
+						else
+							spotifyTrack = track[0].trim();
+					} else {
+						spotifyTrack = trackToken;
+					}
+
+
+					System.out.println("1172 RUN AFTER: " + spotifyArtist);
 					stc = new SearchTrackController(s, file);
 					stc.SearchTrack(spotifyTrack, spotifyArtist);
 					setStatus("Match found", true);
@@ -1148,7 +1182,7 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 					
 					}
 
-
+					Toast.makeText(activity, "Song Identified!", Toast.LENGTH_SHORT).show();
 					trackChanges(albumsResult);
 					// add button here for option to parse metadata to Spotify
 
