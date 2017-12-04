@@ -1132,9 +1132,12 @@ public class GracenoteMusicID extends Activity implements SpotifyPlayer.Notifica
 					spotifyAlbum = albumsResult.albums().getIterator().next().title().display();				//Ex: Silence
 
 					//Delimiting artistToken into array artist[]
-					String[] artist = artistToken.split(" Feat. ");		//delimit aka remove all instances of " Feat. "
-					System.out.println(Arrays.toString(artist));				//EX: artist[0] = Marshmello, artist[1] = Khalid
-					spotifyArtist = artist[0];									//set only first token; Ex: Marshmello
+					if (artistToken.contains("Feat.")) {                            //if artistToken containt "Feat."
+                        String[] artist = artistToken.split(" Feat. ");		//delimit aka remove all instances of " Feat. "
+                        System.out.println(Arrays.toString(artist));				//EX: artist[0] = Marshmello, artist[1] = Khalid
+                        spotifyArtist = artist[0];                                  //set only first token; Ex: Marshmello
+                    }
+                    else spotifyArtist = artistToken;                                //if not contains "Feat.", keep string value
 
 					stc = new SearchTrackController(s, file);
 					stc.SearchTrack(spotifyTrack, spotifyArtist);
