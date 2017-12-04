@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\shaders"/></dataSet><dataSet config="debug"><source path="C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\debug\shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\shaders"/></dataSet><dataSet config="debug"><source path="C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\debug\shaders"/></dataSet></merger>

@@ -1,11 +1,11 @@
 #Internal package file, do not edit.
-#Sun Dec 03 01:31:43 EST 2017
-1.base=C\:\\Users\\Matthew Fair\\AndroidStudioProjects\\wabam30\\build\\intermediates\\assets\\debug
+#Mon Dec 04 00:38:27 EST 2017
+1.base=C\:\\Users\\Matthew Fair\\.AndroidStudio3.0\\Projects\\wabam3\\build\\intermediates\\assets\\debug
 0.baseType=DIRECTORY
 1.baseType=DIRECTORY
 count=2
 1.set=ASSET
 0.path=license.txt
 0.set=ASSET
-0.base=C\:\\Users\\Matthew Fair\\AndroidStudioProjects\\wabam30\\build\\intermediates\\assets\\debug
+0.base=C\:\\Users\\Matthew Fair\\.AndroidStudio3.0\\Projects\\wabam3\\build\\intermediates\\assets\\debug
 1.path=1557.b

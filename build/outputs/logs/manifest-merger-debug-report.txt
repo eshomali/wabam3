@@ -1,15 +1,15 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:2:1-63:12
-INJECTED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:2:1-63:12
-INJECTED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:2:1-63:12
-INJECTED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:2:1-63:12
+ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:2:1-63:12
 MERGED from [com.github.kaaes:spotify-web-api-android:0.4.1] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\spotify-web-api-android-0.4.1.aar\0b1d117a6e409fb45e6adebc24b8fccf\AndroidManifest.xml:2:1-13:12
 MERGED from [com.spotify.android:auth:1.0.0-alpha] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\auth-1.0.0-alpha.aar\0d768d6f03e6f38853ab332ad13be329\AndroidManifest.xml:22:1-55:12
-MERGED from [com.spotify.sdk:spotify-player-24-noconnect-2.20b:] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\spotify-player-24-noconnect-2.20b.aar\469cd0e663f658c4ebfc13ed15bf761a\AndroidManifest.xml:22:1-32:12
+MERGED from [com.spotify.sdk:spotify-player-24-noconnect-2.20b:] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\spotify-player-24-noconnect-2.20b.aar\9f4658b4d247afdf22f86623075bcd9c\AndroidManifest.xml:22:1-32:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\9061ab9c81523723b4f54b4c7eb5fcfe\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\57bf9b17330992b4ec4c668334a25cf2\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:customtabs:25.1.1] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\customtabs-25.1.1.aar\3ffc288a5217ab7c4dfd55e30bba86a3\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\bf686274c8aa247e9f006bf517baf538\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:customtabs:25.1.1] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\customtabs-25.1.1.aar\fc288ea57c02cae75631cf853930a250\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\45a77bb06e96436ce81657fd7176d24b\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\3aa00884c9e4a6bc34ee32c8cbd6cd2f\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\cd2ec001119461e4f846763283f066ee\AndroidManifest.xml:17:1-31:12
@@ -19,39 +19,39 @@ MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Matthew Fai
 MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\ac691e09c0f4d307d7238ae07fceea7c\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\a1ff1bc119f2476c1affc1e2a2035fde\AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\d82b6857fdadec09185f62aa85b21c43\AndroidManifest.xml:17:1-30:12
-INJECTED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:2:1-63:12
-INJECTED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:2:1-63:12
-INJECTED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:2:1-63:12
 	package
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:3:5-35
-		INJECTED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:3:5-35
+		INJECTED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:5:5-30
-		INJECTED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:4:5-28
-		INJECTED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml
 uses-sdk
-ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:7:5-9:41
-INJECTED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:7:5-9:41
-INJECTED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:7:5-9:41
+ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.kaaes:spotify-web-api-android:0.4.1] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\spotify-web-api-android-0.4.1.aar\0b1d117a6e409fb45e6adebc24b8fccf\AndroidManifest.xml:6:5-8:41
 MERGED from [com.github.kaaes:spotify-web-api-android:0.4.1] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\spotify-web-api-android-0.4.1.aar\0b1d117a6e409fb45e6adebc24b8fccf\AndroidManifest.xml:6:5-8:41
 MERGED from [com.spotify.android:auth:1.0.0-alpha] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\auth-1.0.0-alpha.aar\0d768d6f03e6f38853ab332ad13be329\AndroidManifest.xml:27:5-29:41
 MERGED from [com.spotify.android:auth:1.0.0-alpha] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\auth-1.0.0-alpha.aar\0d768d6f03e6f38853ab332ad13be329\AndroidManifest.xml:27:5-29:41
-MERGED from [com.spotify.sdk:spotify-player-24-noconnect-2.20b:] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\spotify-player-24-noconnect-2.20b.aar\469cd0e663f658c4ebfc13ed15bf761a\AndroidManifest.xml:26:5-28:41
-MERGED from [com.spotify.sdk:spotify-player-24-noconnect-2.20b:] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\spotify-player-24-noconnect-2.20b.aar\469cd0e663f658c4ebfc13ed15bf761a\AndroidManifest.xml:26:5-28:41
+MERGED from [com.spotify.sdk:spotify-player-24-noconnect-2.20b:] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\spotify-player-24-noconnect-2.20b.aar\9f4658b4d247afdf22f86623075bcd9c\AndroidManifest.xml:26:5-28:41
+MERGED from [com.spotify.sdk:spotify-player-24-noconnect-2.20b:] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\spotify-player-24-noconnect-2.20b.aar\9f4658b4d247afdf22f86623075bcd9c\AndroidManifest.xml:26:5-28:41
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\9061ab9c81523723b4f54b4c7eb5fcfe\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\9061ab9c81523723b4f54b4c7eb5fcfe\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\57bf9b17330992b4ec4c668334a25cf2\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\57bf9b17330992b4ec4c668334a25cf2\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:customtabs:25.1.1] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\customtabs-25.1.1.aar\3ffc288a5217ab7c4dfd55e30bba86a3\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customtabs:25.1.1] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\customtabs-25.1.1.aar\3ffc288a5217ab7c4dfd55e30bba86a3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\bf686274c8aa247e9f006bf517baf538\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\bf686274c8aa247e9f006bf517baf538\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:customtabs:25.1.1] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\customtabs-25.1.1.aar\fc288ea57c02cae75631cf853930a250\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:25.1.1] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\customtabs-25.1.1.aar\fc288ea57c02cae75631cf853930a250\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\45a77bb06e96436ce81657fd7176d24b\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\45a77bb06e96436ce81657fd7176d24b\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\3aa00884c9e4a6bc34ee32c8cbd6cd2f\AndroidManifest.xml:20:5-44
@@ -70,58 +70,58 @@ MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Matthew Fair\.g
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\a1ff1bc119f2476c1affc1e2a2035fde\AndroidManifest.xml:21:5-23:58
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\d82b6857fdadec09185f62aa85b21c43\AndroidManifest.xml:20:5-22:41
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\d82b6857fdadec09185f62aa85b21c43\AndroidManifest.xml:20:5-22:41
-INJECTED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:7:5-9:41
-INJECTED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:7:5-9:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\9061ab9c81523723b4f54b4c7eb5fcfe\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:9:9-38
-		INJECTED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:8:9-35
-		INJECTED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:8:9-35
+		INJECTED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:11:5-71
+ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:11:5-71
 	android:name
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:11:22-68
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:11:22-68
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:12:5-81
+ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:12:5-81
 	android:name
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:12:22-78
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:12:22-78
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:13:5-67
+ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:13:5-67
 MERGED from [com.spotify.android:auth:1.0.0-alpha] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\auth-1.0.0-alpha.aar\0d768d6f03e6f38853ab332ad13be329\AndroidManifest.xml:31:5-67
 MERGED from [com.spotify.android:auth:1.0.0-alpha] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\auth-1.0.0-alpha.aar\0d768d6f03e6f38853ab332ad13be329\AndroidManifest.xml:31:5-67
 	android:name
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:13:22-64
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:13:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:14:5-79
+ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:14:5-79
 	android:name
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:14:22-76
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:14:22-76
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:15:5-75
+ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:15:5-75
 	android:name
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:15:22-72
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:15:22-72
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:16:5-80
+ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:16:5-80
 	android:name
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:16:22-77
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:16:22-77
 application
-ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:18:5-61:19
+ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:18:5-61:19
 MERGED from [com.github.kaaes:spotify-web-api-android:0.4.1] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\spotify-web-api-android-0.4.1.aar\0b1d117a6e409fb45e6adebc24b8fccf\AndroidManifest.xml:11:5-20
 MERGED from [com.github.kaaes:spotify-web-api-android:0.4.1] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\spotify-web-api-android-0.4.1.aar\0b1d117a6e409fb45e6adebc24b8fccf\AndroidManifest.xml:11:5-20
 MERGED from [com.spotify.android:auth:1.0.0-alpha] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\auth-1.0.0-alpha.aar\0d768d6f03e6f38853ab332ad13be329\AndroidManifest.xml:33:5-53:19
 MERGED from [com.spotify.android:auth:1.0.0-alpha] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\auth-1.0.0-alpha.aar\0d768d6f03e6f38853ab332ad13be329\AndroidManifest.xml:33:5-53:19
-MERGED from [com.spotify.sdk:spotify-player-24-noconnect-2.20b:] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\spotify-player-24-noconnect-2.20b.aar\469cd0e663f658c4ebfc13ed15bf761a\AndroidManifest.xml:30:5-20
-MERGED from [com.spotify.sdk:spotify-player-24-noconnect-2.20b:] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\spotify-player-24-noconnect-2.20b.aar\469cd0e663f658c4ebfc13ed15bf761a\AndroidManifest.xml:30:5-20
+MERGED from [com.spotify.sdk:spotify-player-24-noconnect-2.20b:] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\spotify-player-24-noconnect-2.20b.aar\9f4658b4d247afdf22f86623075bcd9c\AndroidManifest.xml:30:5-20
+MERGED from [com.spotify.sdk:spotify-player-24-noconnect-2.20b:] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\spotify-player-24-noconnect-2.20b.aar\9f4658b4d247afdf22f86623075bcd9c\AndroidManifest.xml:30:5-20
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\9061ab9c81523723b4f54b4c7eb5fcfe\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\9061ab9c81523723b4f54b4c7eb5fcfe\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\57bf9b17330992b4ec4c668334a25cf2\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\57bf9b17330992b4ec4c668334a25cf2\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:customtabs:25.1.1] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\customtabs-25.1.1.aar\3ffc288a5217ab7c4dfd55e30bba86a3\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:customtabs:25.1.1] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\customtabs-25.1.1.aar\3ffc288a5217ab7c4dfd55e30bba86a3\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\bf686274c8aa247e9f006bf517baf538\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\bf686274c8aa247e9f006bf517baf538\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:customtabs:25.1.1] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\customtabs-25.1.1.aar\fc288ea57c02cae75631cf853930a250\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:customtabs:25.1.1] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\customtabs-25.1.1.aar\fc288ea57c02cae75631cf853930a250\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\45a77bb06e96436ce81657fd7176d24b\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\45a77bb06e96436ce81657fd7176d24b\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\3aa00884c9e4a6bc34ee32c8cbd6cd2f\AndroidManifest.xml:22:5-26:19
@@ -141,79 +141,79 @@ MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Matthew Fair\.g
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\d82b6857fdadec09185f62aa85b21c43\AndroidManifest.xml:24:5-28:19
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\d82b6857fdadec09185f62aa85b21c43\AndroidManifest.xml:24:5-28:19
 	android:label
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:20:9-41
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:20:9-41
 	android:icon
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:19:9-46
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:19:9-46
 uses-library#com.google.android.maps
-ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:21:9-23:40
+ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:21:9-23:40
 	android:required
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:23:13-37
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:23:13-37
 	android:name
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:22:13-51
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:22:13-51
 activity#com.customer.example.GracenoteMusicID
-ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:25:9-34:20
+ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:25:9-34:20
 	android:screenOrientation
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:28:13-49
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:28:13-49
 	android:label
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:27:13-45
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:27:13-45
 	android:name
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:26:13-45
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:26:13-45
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:29:13-33:29
+ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:29:13-33:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:30:17-69
+ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:30:17-69
 	android:name
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:30:25-66
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:30:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:32:17-77
+ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:32:17-77
 	android:name
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:32:27-74
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:32:27-74
 activity#com.customer.example.HistoryDetails
-ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:35:9-37:52
+ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:35:9-37:52
 	android:screenOrientation
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:37:13-49
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:37:13-49
 	android:name
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:36:13-43
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:36:13-43
 service#com.customer.example.IdNowService
-ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:40:9-57
+ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:40:9-57
 	android:name
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:40:18-46
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:40:18-46
 receiver#com.customer.example.IdNowWidgetProvider
-ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:42:9-59:20
+ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:42:9-59:20
 	android:name
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:42:19-54
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:42:19-54
 intent-filter#android.appwidget.action.APPWIDGET_UPDATE+android.intent.category.ALTERNATIVE+android.intent.category.DEFAULT
-ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:43:13-48:29
+ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:43:13-48:29
 action#android.appwidget.action.APPWIDGET_UPDATE
-ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:44:17-84
+ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:44:17-84
 	android:name
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:44:25-81
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:44:25-81
 category#android.intent.category.DEFAULT
-ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:46:17-76
+ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:46:17-76
 	android:name
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:46:27-73
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:46:27-73
 category#android.intent.category.ALTERNATIVE
-ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:47:17-80
+ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:47:17-80
 	android:name
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:47:27-77
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:47:27-77
 intent-filter#com.customer.example.IdNowService.IDNOW
-ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:49:13-51:29
+ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:49:13-51:29
 action#com.customer.example.IdNowService.IDNOW
-ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:50:17-82
+ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:50:17-82
 	android:name
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:50:25-79
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:50:25-79
 intent-filter#com.customer.example.IdNowService.CANCEL
-ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:52:13-54:29
+ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:52:13-54:29
 action#com.customer.example.IdNowService.CANCEL
-ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:53:17-83
+ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:53:17-83
 	android:name
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:53:25-80
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:53:25-80
 meta-data#android.appwidget.provider
-ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:56:13-58:62
+ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:56:13-58:62
 	android:resource
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:58:17-59
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:58:17-59
 	android:name
-		ADDED from C:\Users\Matthew Fair\AndroidStudioProjects\wabam30\src\main\AndroidManifest.xml:57:17-58
+		ADDED from C:\Users\Matthew Fair\.AndroidStudio3.0\Projects\wabam3\src\main\AndroidManifest.xml:57:17-58
 activity#com.spotify.sdk.android.authentication.AuthCallbackActivity
 ADDED from [com.spotify.android:auth:1.0.0-alpha] C:\Users\Matthew Fair\.gradle\caches\transforms-1\files-1.1\auth-1.0.0-alpha.aar\0d768d6f03e6f38853ab332ad13be329\AndroidManifest.xml:34:9-48:20
 	android:exported

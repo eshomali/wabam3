@@ -1,4 +1,4 @@
-#Sat Dec 02 21:29:44 EST 2017
-base.0=C\:\\Users\\Matthew Fair\\AndroidStudioProjects\\wabam30\\build\\intermediates\\transforms\\dexMerger\\debug\\6
+#Mon Dec 04 00:38:36 EST 2017
+base.0=C\:\\Users\\Matthew Fair\\.AndroidStudio3.0\\Projects\\wabam3\\build\\intermediates\\transforms\\dexMerger\\debug\\5
 path.0=classes.dex
 renamed.0=classes.dex
